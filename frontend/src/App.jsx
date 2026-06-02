@@ -1,25 +1,20 @@
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import Questoes from './pages/Questoes'
-import Conteudos from './pages/Conteudos'
-import Simulados from './pages/Simulados'
-import './App.css'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import SimuladoNovo from './pages/Simulado/Simulado';
+import Home from './pages/Home/Home';
+import Questoes from './pages/Questoes/Questoes';
+import './App.css';
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <main className="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/questoes" element={<Questoes />} />
-          <Route path="/conteudos" element={<Conteudos />} />
-          <Route path="/simulados" element={<Simulados />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/simulado" element={<SimuladoNovo />} />
+        <Route path="/questoes" element={<Questoes />} />
+      </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

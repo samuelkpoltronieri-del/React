@@ -1,0 +1,69 @@
+/* src/components/QuestaoItem/QuestaoItem.module.css */
+/* Mantenha os estilos anteriores e adicione: */
+
+.headerInfo {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.badgeVestibular {
+  background: #3498db;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.badgeMateria {
+  background: #e1b12c;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.badgeDificuldade {
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.facil {
+  background-color: #2ecc71;
+}
+
+.medio {
+  background-color: #f39c12;
+}
+
+.dificil {
+  background-color: #e74c3c;
+}
+
+.imagemContainer {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.imagemQuestao {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.comentario {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #e8f4fd;
+  border-left: 4px solid #3498db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #2c3e50;
+}

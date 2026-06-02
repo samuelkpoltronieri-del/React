@@ -15,6 +15,18 @@ const PORT = process.env.PORT || 3000;
 // ============================================================
 // MIDDLEWARES
 // ============================================================
+
+// Middleware CORS para aceitar requisições do frontend
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:5173');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(200);
+  }
+  next();
+});
+
 app.use(express.static('public')); // Servir arquivos estáticos da pasta 'public'
 // Middleware para processar JSON no body das requisições
 app.use(express.json());
