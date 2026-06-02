@@ -1,0 +1,36 @@
+/* Navbar.module.css */
+:root {
+  --bg-dark: #0B0F1C;
+  --card-bg: #111827;
+  --primary: #3B82F6;
+  --primary-hover: #2563EB;
+  --text-white: #FFFFFF;
+  --text-gray: #9CA3AF;
+  --border: #1F2937;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-bg);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #1F2937;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3B82F6;
+}
+.links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+}
+.links a:hover {
+  color: #3B82F6;
+}
